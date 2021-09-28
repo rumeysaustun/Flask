@@ -1,5 +1,5 @@
 # Flask
-## Flask Kurulumu ve ilk deneme
+## Flask Kurulumu
 
 Bu kurulum Windows 10 Python 3.9.7'de yapılmıştır. İlk olarak komut istemine aşağıdaki kod bloğunu yazarak Flask'ı bilgisayara indirip kuruyoruz.
 
@@ -36,7 +36,15 @@ tıklıyoruz. Ardından sol alt kısımda bulunan **“Install Package”** buto
 ![6](https://user-images.githubusercontent.com/59111328/135087987-064d2257-2713-4a61-b255-c3ab0150e1b5.PNG)
 
 <br>
---------------------------------------------------------------------------**Şekil 1.5**--------------------------------------------------------------------------
+-----------------------------------------------------------------------**Şekil 1.5**----------------------------------------------------------------------
 
+##Flask ile İlk Uygulama
 
+Birçok program kullanabilirsiniz ben aşamaları gösterirken Pycharm 2021.2.2 kullanacağım. İlk olarak aşağıdaki kodu yazarak Framework’u projeye dahil ediyoruz.
+
+```
+ from flask import Flask 
+```
+![kod1](https://user-images.githubusercontent.com/59111328/135089596-38019db6-738c-4167-a28c-690a1e32d5f6.PNG)<br>
+-----------------------------------------------------------------------**Şekil 1.5**----------------------------------------------------------------------
 
