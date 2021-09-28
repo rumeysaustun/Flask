@@ -19,6 +19,20 @@ PyCharm 2021.2.2’yi açtıktan sonra bir pencere açılacaktır. Bu pencerede 
 <br>
 ----------------------------------------------------------**Şekil 1.2**----------------------------------------------------------
 
+Karşımıza çıkan sekme Şekil 1.3’te belirtilmiştir. Açılan sekmenin sol üst kısmında bulunan File seçeneğine tıklıyoruz, ardından açılan sekmede settings bölümüne tıklıyoruz.
+
+![Flask projesi – main py 28 09 2021 15_02_23](https://user-images.githubusercontent.com/59111328/135087018-db6cbb79-d60c-4b0e-9724-d451a10eaf43.png) <br>
+--------------------------------------------------------------------------**Şekil 1.3**--------------------------------------------------------------------------
+
+Açılan sekmede Şekil 1.4’te belirtildiği gibi önce Pyhton Interpreter bölümüne sonra Pip seçeneğine tıklıyoruz .
+
+![5](https://user-images.githubusercontent.com/59111328/135087660-166918eb-631f-48d5-8d2a-d2de99e52a58.PNG)
+<br>
+--------------------------------------------------------------------------**Şekil 1.4**--------------------------------------------------------------------------
+
+
+
+
 
 
 
