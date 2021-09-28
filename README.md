@@ -34,7 +34,6 @@ Açılan sekmede Şekil 1.4’te belirtildiği gibi önce **Pyhton Interpreter**
 tıklıyoruz. Ardından sol alt kısımda bulunan **“Install Package”** butonuna tıklayıp Flask’ı kuruyoruz.
 
 ![6](https://user-images.githubusercontent.com/59111328/135087987-064d2257-2713-4a61-b255-c3ab0150e1b5.PNG)
-
 <br>
 -----------------------------------------------------------------------**Şekil 1.5**----------------------------------------------------------------------
 
@@ -62,7 +61,7 @@ if __name__ =="__main__":
 ```
 ![kod3](https://user-images.githubusercontent.com/59111328/135091231-79a406ab-97b5-430c-8109-45256ead0564.PNG)
 <br>
--------------------------------------------------------------**Şekil 1.8**------------------------------------------------------------
+--------------------------------------------------------**Şekil 1.8**-------------------------------------------------------
 
 Son olarak web sitesinde alınan syntax vb. hataları almamak için 
 ```
@@ -118,5 +117,5 @@ app.run(debug=True,port=2000)
 olarak değiştirmeniz yeterli olacaktır. Uygulamanın son hali Şekil 1.15’te göründüğü gibi olacaktır.
 
 ![sayfa2](https://user-images.githubusercontent.com/59111328/135093479-40f77118-eb80-4ea3-8772-4a5ef3c6506f.PNG)
-<br>----------------------------------------------------------**Şekil 1.15**----------------------------------------------------------
+<br>---------------------------------------------------**Şekil 1.15**--------------------------------------------------
 
