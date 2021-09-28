@@ -28,7 +28,7 @@ Açılan sekmede Şekil 1.4’te belirtildiği gibi önce **Pyhton Interpreter**
 
 ![5](https://user-images.githubusercontent.com/59111328/135087660-166918eb-631f-48d5-8d2a-d2de99e52a58.PNG)
 <br>
---------------------------------------------------------------------------**Şekil 1.4**--------------------------------------------------------------------------
+--------------------------------------------------------------------------**Şekil 1.4**------------------------------------------------------------------------
 
 Şekil 1.5’teki belirtildiği gibi bir sekme açılıyor. Sekmede üst tarafta bulunan arama yerine **“Flask”** yazıyoruz , aşağıda çıkan isimler arasından Flask’ı bulup
 tıklıyoruz. Ardından sol alt kısımda bulunan **“Install Package”** butonuna tıklayıp Flask’ı kuruyoruz.
@@ -46,5 +46,9 @@ Birçok program kullanabilirsiniz ben aşamaları gösterirken Pycharm 2021.2.2 
  from flask import Flask 
 ```
 ![kod1](https://user-images.githubusercontent.com/59111328/135089596-38019db6-738c-4167-a28c-690a1e32d5f6.PNG)<br>
------------------------------------------------------------------------**Şekil 1.5**----------------------------------------------------------------------
+------------------------------------------------------------------**Şekil 1.5**-----------------------------------------------------------------
+<div style="color: red; text-align: center;">
+  
+Şekil 1.6
+</div>
 
