@@ -6,8 +6,8 @@ Bu kurulum Windows 10 Python 3.9.7'de yapılmıştır. İlk olarak komut istemin
 ``` 
 pip install flask 
 ```
+![pip install flask](https://user-images.githubusercontent.com/59111328/135081212-8ce58489-57d0-4448-9eb3-fed4a7fc2e3b.PNG)
 
-![pip install flask](https://user-images.githubusercontent.com/59111328/135080601-2f232bb2-2a22-43d6-8203-385992b24fb8.PNG)
 
 
 
