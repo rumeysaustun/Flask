@@ -47,8 +47,8 @@ Birçok program kullanabilirsiniz ben aşamaları gösterirken Pycharm 2021.2.2 
 ```
 ![kod1](https://user-images.githubusercontent.com/59111328/135089596-38019db6-738c-4167-a28c-690a1e32d5f6.PNG)<br>
 ------------------------------------------------------------------**Şekil 1.5**-----------------------------------------------------------------
-<div style="color: red; text-align: center;">
+<div style="text-align: center;">
   
-Şekil 1.6
+**Şekil 1.5**
 </div>
 
