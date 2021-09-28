@@ -82,7 +82,7 @@ Projeyi çalıştırdıktan sonra Şekil 1.10’daki gibi alt kısımda bulunan 
 Linke tıkladıktan sonra Şekil 1.11’deki gibi bir görüntü alıyorsak uygulama sorunsuz çalışmış demektir. Not Found şeklinde hata almamızın sebebi flask frameworkda her requeste karşılık bir response geliyor ve biz burada http://127.0.0.1:5000/ şeklinde bir resquest çalıştırdık. Fakat bu isteğe yanıt olarak response vermedik bu yüzden **Not Found** hatası aldık.
 
 ![nıt found](https://user-images.githubusercontent.com/59111328/135092142-bc7ab158-2799-4b09-a60c-6c8372db8a08.PNG)
-<br>-------------------------------------------------------------**Şekil 1.11**-------------------------------------------------------------
+<br>-----------------------------------------------------------------**Şekil 1.11**-----------------------------------------------------------------
 
 Bir resquet oluşturduk, şimdi sıra bu resqueste karşılık bir response oluşturmakta. Bunu da Python fonksiyonlar yardımıyla yapabiliriz. Uygulamaya 
 ```
@@ -90,7 +90,7 @@ Bir resquet oluşturduk, şimdi sıra bu resqueste karşılık bir response olu�
 ```  
 kodunu giriyoruz. Şekil 1.12’deki gibi görüntüye sahip oluyor. 
 ![kod6](https://user-images.githubusercontent.com/59111328/135092468-b2ffd4e8-8264-4661-905c-c6745d0e77e8.PNG)
-<br>---------------------------------------------------------**Şekil 1.12**----------------------------------------------------------
+<br>-------------------------------------------------------------**Şekil 1.12**--------------------------------------------------------------
 
 Biz bir decoreter mantığı ile bir request yaptık. Ve bu request karşılık fonksiyon yardımı ile bir response değeri döndürdük. Burada önemli olan bir yer var. **@app.route("/")** ile request yaptıktan o requeste karşılık gelecek bir response değerini döndüren fonksiyonu yazmamız gerekiyor. Son kod olarak  
 ```
@@ -99,7 +99,7 @@ def index(): return "Merhaba Dünya"
 kodunu giriyoruz. Ve Şekil 1.13’teki sayfa ortaya çıkıyor.
 
 ![kod7](https://user-images.githubusercontent.com/59111328/135092810-abe4d0dd-ad95-4ea0-b516-05c10756f9ae.PNG)
-<br>----------------------------------------------------------**Şekil 1.13**----------------------------------------------------------
+<br>--------------------------------------------------------------**Şekil 1.13**--------------------------------------------------------------
 
 Tüm kodlarımızı doğru bir şekilde girdikten sonra uygulamayı çalıştırıyoruz ve Şekil 1.14’deki sekme açılıyor, görüldüğü üzere başarıyla çalışıyor.
 
