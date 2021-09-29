@@ -1,4 +1,4 @@
-##Flask ile İlk Uygulama
+# Flask ile İlk Uygulama
 
 Birçok program kullanabilirsiniz ben aşamaları gösterirken Pycharm 2021.2.2 kullanacağım. İlk olarak aşağıdaki kodu yazarak Framework’u projeye dahil ediyoruz.
 
