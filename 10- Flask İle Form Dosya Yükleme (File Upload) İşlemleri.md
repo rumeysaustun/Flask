@@ -65,7 +65,7 @@ app.secret_key = "Flask_Dosya_Yukleme_Ornegi"
 
 ## Güvenlik Kontrolleri
 
-Formlardan neler yükleneceğini bilemeyiz. Bunun için ilk olarak güvenlik önlemlerini almak bize fayda sağlayacaktır. İlk güvenlik önlemi olan dosya uzantısı kontrolüdür. Çünkü saldırganlar .php veya .exe uzantılı gibi sunucu tarafından çalıştırılabilen dosyalarla kendi zararlı kodlarını sunucumuzda aktif edebilirler. Öyleyse sayfanın en başında eklediğimiz UZANTILAR isimli dizimiz ile gelen dosyanın bu uzantılardan birine sahip olup olmadığını kontrol edelim:
+Formlardan neler yükleneceğini bilemeyiz. Bunun için ilk olarak güvenlik önlemlerini almak bize fayda sağlayacaktır. İlk güvenlik önlemi olan dosya uzantısı kontrolüdür. Çünkü saldırganlar **.php** veya **.exe** uzantılı gibi sunucu tarafından çalıştırılabilen dosyalarla kendi zararlı kodlarını sunucumuzda aktif edebilirler. Öyleyse sayfanın en başında eklediğimiz **UZANTILAR** isimli dizimiz ile gelen dosyanın bu uzantılardan birine sahip olup olmadığını kontrol edelim:
 
 ```
 def uzanti_kontrol(dosyaadi):
@@ -73,9 +73,9 @@ def uzanti_kontrol(dosyaadi):
    dosyaadi.rsplit('.', 1)[1].lower() in UZANTILAR
 ```
 
-Peki ne yaptık? İlk olarak **uzanti_kontrol()** isimli fonksiyonumuz ile dosyaadi isimli bir parametre aldık ve önce bu dosya adı bir uzantıya sahip mi diye (içinde . varsa uzantıya sahiptir), ardından da uzantısı bizim izin verdiğimiz dosya uzantılarından biri mi diye kontrol ettik. Eğer bu iki testten başarıyla geçerse True, geçemezse False dönecektir.
+Peki ne yaptık? İlk olarak **uzanti_kontrol()** isimli fonksiyonumuz ile dosyaadi isimli bir parametre aldık ve önce bu dosya adı bir uzantıya sahip mi diye (içinde . varsa uzantıya sahiptir), ardından da uzantısı bizim izin verdiğimiz dosya uzantılarından biri mi diye kontrol ettik. Eğer bu iki testten başarıyla geçerse **True**, geçemezse **False** dönecektir.
 
-Şimdi ise **secure_filename()** fonksiyonu ile dosyanın sahip olduğu isim bizim için bir tehdit içeriyor mu diye kontrol edeceğiz. Nasıl yani derseniz diye hemen küçük bir örnek verelim. Diyelim ki saldırganın sitemizin temel dosyaları olan resimleri vs değiştirmek istiyor. Site logomuzu, yazı resimlerini kendi resimleriyle değiştirmek istiyor ve bunu yapmak içinde dosya adını "../../../../home/images/logo.png" gibi bir formatta hazırladı ve dosya yükleme işlemini gerçekleştirdi. Sonuç olarak saldırgan bizim izin verdiğimiz klasöre değil, kendi istediği klasöre yüklemiş olduğu dosyasını. Tabi bu her sistemde çalışmayabilir ama emin olun o talihsiz siz olmak istemezsiniz. Bu nedenle şu şekilde küçük ama etkili bir kontrol mekanizması ekleyelim:
+Şimdi ise **secure_filename()** fonksiyonu ile dosyanın sahip olduğu isim bizim için bir tehdit içeriyor mu diye kontrol edeceğiz. Nasıl yani derseniz diye hemen küçük bir örnek verelim. Diyelim ki saldırganın sitemizin temel dosyaları olan resimleri vs değiştirmek istiyor. Site logomuzu, yazı resimlerini kendi resimleriyle değiştirmek istiyor ve bunu yapmak içinde dosya adını **"../../../../home/images/logo.png"** gibi bir formatta hazırladı ve dosya yükleme işlemini gerçekleştirdi. Sonuç olarak saldırgan bizim izin verdiğimiz klasöre değil, kendi istediği klasöre yüklemiş olduğu dosyasını. Tabi bu her sistemde çalışmayabilir ama emin olun o talihsiz siz olmak istemezsiniz. Bu nedenle şu şekilde küçük ama etkili bir kontrol mekanizması ekleyelim:
 ```
 dosyaadi = secure_filename(dosya.filename)
 ```
@@ -135,7 +135,7 @@ Artık form yapımız ile rahatlıkla dosya yükleme işlemini yapabiliyoruz. A�
 
 Resimler:
 
-
+![copy](https://user-images.githubusercontent.com/59111328/135291051-1a22d58d-7029-4fc3-8743-dbf08f55f158.PNG)
 
 
 
