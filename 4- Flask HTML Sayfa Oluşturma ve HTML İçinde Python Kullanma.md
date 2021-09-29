@@ -2,11 +2,11 @@
 
 Önceki adımlarda sayfa yönlendirmelerimizi (route) hazırlayarak sayfa bağlantılarımızı oluşturmuştuk ve sayfalara mesajlar girmiştik. Şimdi ise sayfalarımıza HTML temalarımızı ve içeriklerimizi nasıl gireceğimizi öğreneceğiz.
 
-İlk olarak çalışma dosyanızın olduğu dizinde templates isimli klasör oluşturalım. Ardından HTML sayfalarınızı bu klasöre koyalım. Örneğin iletisim.html , hakkimizda.html gibi sayfalarınızı bu klasöre koyalım.
+İlk olarak çalışma dosyanızın olduğu dizinde templates isimli klasör oluşturalım. Ardından HTML sayfalarınızı bu klasöre koyalım. Örneğin **iletisim.html**, **hakkimizda.html** gibi sayfalarınızı bu klasöre koyalım.
 
 ![birleşmiş](https://user-images.githubusercontent.com/59111328/135268882-371533b6-c1f3-411c-9f14-8a72786e30f4.png)
 
-Bu klasör içinde alt klasörler oluşturarak HTML dosyalarınızı bölümlere ayırabiliriz (musteripaneli, yonetim, alanlar vs). Ama unutmayın ki ana klasörün adı templates olmak zorunda. Buna dikkat ettikten sonra sıradaki adıma geçebiliriz.
+Bu klasör içinde alt klasörler oluşturarak HTML dosyalarınızı bölümlere ayırabiliriz (musteripaneli, yonetim, alanlar vs). Ama unutmayın ki ana klasörün adı **templates** olmak zorunda. Buna dikkat ettikten sonra sıradaki adıma geçebiliriz.
 
 Artık sayfalarımız hazır olduğuna göre (HTML temalarınızı hazırladığınızı varsayıyorum) yönlendirmelerimizi sadece bir mesajla değilde ilgili HTML dosyasını göstererek yapabiliriz. Bunun için route kodunuz şu şekilde olmalıdır:
 
