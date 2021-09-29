@@ -22,7 +22,7 @@ PyCharm 2021.2.2’yi açtıktan sonra bir pencere açılacaktır. Bu pencerede 
 Karşımıza çıkan sekme Şekil 1.3’te belirtilmiştir. Açılan sekmenin sol üst kısmında bulunan **File** seçeneğine tıklıyoruz, ardından açılan sekmede **Settings** bölümüne tıklıyoruz.
 
 ![Flask projesi – main py 28 09 2021 15_02_23](https://user-images.githubusercontent.com/59111328/135087018-db6cbb79-d60c-4b0e-9724-d451a10eaf43.png) <br>
---------------------------------------------------------------------------**Şekil 1.3**--------------------------------------------------------------------------
+**Şekil 1.3**
 
 Açılan sekmede Şekil 1.4’te belirtildiği gibi önce **Pyhton Interpreter** bölümüne sonra **Pip** seçeneğine tıklıyoruz .
 
@@ -81,7 +81,7 @@ Projeyi çalıştırdıktan sonra Şekil 1.10’daki gibi alt kısımda bulunan 
 
 Linke tıkladıktan sonra Şekil 1.11’deki gibi bir görüntü alıyorsak uygulama sorunsuz çalışmış demektir. Not Found şeklinde hata almamızın sebebi flask frameworkda her requeste karşılık bir response geliyor ve biz burada http://127.0.0.1:5000/ şeklinde bir resquest çalıştırdık. Fakat bu isteğe yanıt olarak response vermedik bu yüzden **Not Found** hatası aldık.
 
-![nıt found](https://user-images.githubusercontent.com/59111328/135092142-bc7ab158-2799-4b09-a60c-6c8372db8a08.PNG)
+![nıt found](https://user-images.githubusercontent.com/59111328/135259927-d9af5516-58b4-4918-afc8-cd94bf591296.PNG)
 <br>**Şekil 1.11**
 
 Bir resquet oluşturduk, şimdi sıra bu resqueste karşılık bir response oluşturmakta. Bunu da Python fonksiyonlar yardımıyla yapabiliriz. Uygulamaya 
@@ -103,7 +103,7 @@ kodunu giriyoruz. Ve Şekil 1.13’teki sayfa ortaya çıkıyor.
 
 Tüm kodlarımızı doğru bir şekilde girdikten sonra uygulamayı çalıştırıyoruz ve Şekil 1.14’deki sekme açılıyor, görüldüğü üzere başarıyla çalışıyor.
 
-![sayfa](https://user-images.githubusercontent.com/59111328/135093052-d70d88d5-083b-4775-af72-21d9212f3d05.PNG)
+![sayfa](https://user-images.githubusercontent.com/59111328/135260014-81fea969-7a2a-4aef-8a29-1eb61aff4df6.PNG)
 <br>**Şekil 1.14**
 
 Uygulama **localhost 5000** adresinde çalışıyor. İsteğe bağlı olarak değiştirebilirsiniz. Değiştirmek için 
@@ -116,6 +116,29 @@ app.run(debug=True,port=2000)
 ```
 olarak değiştirmeniz yeterli olacaktır. Uygulamanın son hali Şekil 1.15’te göründüğü gibi olacaktır.
 
-![sayfa2](https://user-images.githubusercontent.com/59111328/135093479-40f77118-eb80-4ea3-8772-4a5ef3c6506f.PNG)
+![sayfa2](https://user-images.githubusercontent.com/59111328/135260063-aecad63e-c9d6-4bb1-9a0d-02ca4822bbd9.PNG)
 <br>**Şekil 1.15**
+
+##Flask’ta Static/Dinamik Url Yapısı
+
+Sayfa yapımızı oluşturmak için  **app = Flask(__name__)** kodunun birkaç satır altından devam ediyoruz.İlk olarak ana sayfa oluşturarak başlıyoruz.
+```
+from flask import Flask,render_template
+
+app = Flask(__name__)
+
+@app.route("/")
+def anaSayfa():
+    return "Merhaba Sayfa Ziyaretçisi"
+
+if __name__ == "__main__":
+    app.run(debug=True)
+```
+kodlarını yazarak aşağıdaki görüntüyü elde ediyoruz.
+
+![sayfa 3](https://user-images.githubusercontent.com/59111328/135260152-a193fc09-a44c-4ac0-9a3e-a6c98d067f95.PNG)
+
+
+Birkaç ana sayfa daha ekleyerek web sitemizi düzenleyelim. İstediğimiz gibi ana sayfa ekleyebilir, seçenekleri çoğaltabiliriz.
+
 
