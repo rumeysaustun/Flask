@@ -1,6 +1,6 @@
 # Flask Template Inheritance ve Blocklar (Include & Extends)
 
-İlk olarak templates klasörün içine şablon bir sayfa oluşturuyoruz ve adına hizmetler adını veriyoruz.
+İlk olarak templates klasörün içine şablon bir sayfa oluşturuyoruz ve adına **hizmetler** adını veriyoruz.
 
 ![hizmetler](https://user-images.githubusercontent.com/59111328/135275373-ec2ac28c-db1c-4914-a65d-bafba2ff8103.PNG)
 
@@ -50,10 +50,10 @@ Bu şablonu kalıtım (inheritance) kullanarak diğer sayfalarda kullanabiliriz.
 ```
 @app.route('/bahce-isleri')
 def bahceisleri():
-   return render_template("bahce-isleri-.html")
+   return render_template("bahçe işleri.html")
 ```
 
-Şablon sayfamız olan hizmetler.html isimli dosyamızda değiştireceğimiz alanları block haline getirerek şablonu kullandığımız diğer sayfalarda dinamik hale getirmiş olacağız. izmetler.html dosyasının son hali şu şekilde olacaktır:
+Şablon sayfamız olan **hizmetler.html** isimli dosyamızda değiştireceğimiz alanları block haline getirerek şablonu kullandığımız diğer sayfalarda dinamik hale getirmiş olacağız. **hizmetler.html** dosyasının son hali şu şekilde olacaktır:
 
 ```
 <!DOCTYPE html>
@@ -92,7 +92,7 @@ def bahceisleri():
 {% endblock %}
 ```
 
-Artık diğer sayfalarımızda bu block alanlarını block isimleriyle çağırarak dilediğimiz gibi değiştireceğiz. İlk olarak yeni oluşturduğumuz bebek-bakiciligi.html sayfamıza gidelim ve extends yapısıyla şablon sayfamızı çağıralım.
+Artık diğer sayfalarımızda bu block alanlarını block isimleriyle çağırarak dilediğimiz gibi değiştireceğiz. İlk olarak yeni oluşturduğumuz **bahçe işleri.html** sayfamıza gidelim ve extends yapısıyla şablon sayfamızı çağıralım.
 
 ```
 {% extends "hizmetler.html" %}
@@ -102,7 +102,7 @@ Artık diğer sayfalarımızda bu block alanlarını block isimleriyle çağıra
 
 ![bahce isleri](https://user-images.githubusercontent.com/59111328/135277586-ae0bf57c-2365-42c1-9de1-312b19a20b1e.PNG)
 
-Son olarak ise değiştirmek istediğimiz sayfaları bahce-isleri.htm sayfasında blockları kullanarak değiştirelim ve şu hale sokalım:
+Son olarak ise değiştirmek istediğimiz sayfaları **bahçe işleri.html** sayfasında blockları kullanarak değiştirelim ve şu hale sokalım:
 
 ```
 {% extends "hizmetler.html" %}
