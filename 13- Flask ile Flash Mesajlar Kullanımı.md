@@ -57,7 +57,55 @@ Komutu ile bir flash mesajı oluşturuyoruz.
 ```
 Ekrana çıktısı bu şekilde olacaktır:
 
+![hata mesajı](https://user-images.githubusercontent.com/59111328/135299752-ffbd8fa1-551a-44ec-96e1-0e8a8642a9a3.PNG)
 
+## Uyarı Tipiyle Flash Mesajı Örneği
+
+Verdiğimiz uyarının kategorisini ayarlayarak sayfamızda özellik ayarlayabiliriz. Mesela hata mesajının arka plan rengini yeşil renk ayarlamak. Ayrıyeten eror,info,warning diye 3 çeşit uyarı kategorisinin olduğunu unutmayınız.
+
+Öncelikle bir hata mesajını proje sayfasında örnek olarak oluşturalım:
+```
+@app.route('/hata')
+def hata():
+   flash("Merhaba, bu hata mesajıdır","error")
+   return render_template("hata.html")
+```
+Sonuç sayfamızda olan **proje.hmtl** sayfasında ise bu sefer özel bir class ile arka plan ayarlayalım:
+```
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hata Mesajı!</title> 
+
+        <style>
+        .error{
+            display: inline-block;
+            background-color: blue;
+            color: yellow;
+            padding: 5px
+        }
+        </style>
+
+</head>
+<body>
+
+    <h1>Merhaba!</h1>
+
+    {% with messages = get_flashed_messages(with_categories=true) %}
+        {% if messages %}
+            <ul class=flashes>
+                            {% for category, message in messages %}
+                                <li class="{{ category }}">{{ message }}</li>
+                            {% endfor %}
+                        </ul>
+        {% endif %}
+    {% endwith %}
+
+
+</body>
+</html>
+```
+Ekran çıktısı bu şekilde olacaktır:
 
 
 
