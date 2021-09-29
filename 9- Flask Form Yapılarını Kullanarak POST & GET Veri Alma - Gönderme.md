@@ -68,7 +68,7 @@ Formdan gelen verileri göstereceğimiz html sayfasını oluşturalım. HTML say
 
 ## Form İçin Route Yazma ve Kütüphaneleri Ekleme
 
-Bu aşamada dosyamızda gerekli form verilerini almak için route yazacağız ve kontrolleri sağlayacağız. Ama unutmadan request kütüphanesini de dahil ederek **from flask import Flask, render_template, request** blogunu sayfamızın üstünde görelim.
+Bu aşamada dosyamızda gerekli form verilerini almak için route yazacağız ve kontrolleri sağlayacağız. Ama unutmadan request kütüphanesini de dahil ederek ```from flask import Flask, render_template, request``` blogunu sayfamızın üstünde görelim.
 
 ```
 @app.route('/verilerial', methods=['POST', 'GET'])
