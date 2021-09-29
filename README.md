@@ -166,6 +166,8 @@ if __name__ == "__main__":
 
 127.0.0.1:5000 adresinin yanına “iletisim” ve “hakkimizda” yazarak yönlendirdiğimiz sekmeye gidebiliriz.
 
+![sayfa4](https://user-images.githubusercontent.com/59111328/135261419-bbf70f9b-127c-4950-9ab7-00477d2d043e.PNG)
+<br>
 ![sayfa5](https://user-images.githubusercontent.com/59111328/135261250-2c9b9f76-1719-4593-a3e3-ce74e73ab267.PNG)
 <br>
 ![sayfa6](https://user-images.githubusercontent.com/59111328/135261275-9aabe657-5376-4944-9134-a76b09be21fe.PNG)
