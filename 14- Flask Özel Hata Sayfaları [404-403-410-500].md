@@ -26,6 +26,7 @@ if __name__ == "__main__":
 ```
 Artık ilgili sayfa bulunmadığında verilen 404 hatası meydana geldiğinde 404.html sayfası ekrana basılacaktır. Siz diğer hata kodları içinde özel sayfaları rahatça oluşturabilirsiniz. En çok karşılaşabileceğiniz hataları aşağıdaki özet bir tablo ile görebilirsiniz.
 
+![hatalar](https://user-images.githubusercontent.com/59111328/135301400-e932fa4e-5fa5-421c-aa4a-73a38d2d8400.PNG)
 
 
 
