@@ -2,7 +2,7 @@
 
 ## Kütüphanelerin Eklenmesi
 
-Python'un temeli olarak ilk önce işe gerekli kütüphanelerimizi ekleyerek başlıyoruz. Bunun için 3 kütüphaneyi pip komutuyla indiriniz ve dosyanızın başına ekleyiniz.
+Python'un temeli olarak ilk önce işe gerekli kütüphanelerimizi ekleyerek başlıyoruz. Bunun için 3 kütüphaneyi **pip** komutuyla indiriniz ve dosyanızın başına ekleyiniz.
 
 ```
 pip install flask-mysqldb
@@ -114,17 +114,17 @@ def kullanicieklesonuc():
 
 **İşin önemli kısmı olan bu route bölümünü açıklayalım:**
 
-```isim = request.form.get('isim')``` : Formdan gelen isim değişkenini alıyoruz
-```yas = request.form.get('yas')``` : Formdan gelen yaş değişkenini alıyoruz
-```cursor = mysql.connection.cursor()``` : Bu tanımlama ile bir cursor oluşturuyoruz ve yukarıda oluşturduğumuz mysql değişkenine atadığımız veritabanını bağlıyoruz.
-```sorgu = "INSERT INTO kullanicilar VALUES(%s,%s,%s)" ```: Veritabanında çalıştırılacak SQL komutudur. Bu sorguya SELECT, INSERT, UPDATE, DELETE, ALTER gibi komutlarınızı yazabilir ve değişkenleri %s ile belirtebilirsiniz.
-```cursor.execute(sorgu,(None,isim,yas)) ```: Yazılan sorguyu cursor aracılığı ile çalıştırıyoruz. parantez içindeki (None,isim,yas) bölümü sorgunun içinde yazdığımız %s e denk gelen değişkenlerdir. Ben tablomda bir auto increment sütunu tuttuğum için None ile boş değer gönderdim.
-```mysql.connection.commit() ```: Yapılan değişikleri kaydetmek ve veritabında uygulamak için gerekli olan commit fonksiyonu. Eğer bu kısmı yazmazsanız değişiklikleriniz veritabanınızda uygulanmayacaktır.
-```cursor.close() ```: Veritabanı bağlantısını sonlandırıyoruz.
+```isim = request.form.get('isim')``` : Formdan gelen isim değişkenini alıyoruz <br>
+```yas = request.form.get('yas')``` : Formdan gelen yaş değişkenini alıyoruz <br>
+```cursor = mysql.connection.cursor()``` : Bu tanımlama ile bir cursor oluşturuyoruz ve yukarıda oluşturduğumuz mysql değişkenine atadığımız veritabanını bağlıyoruz. <br>
+```sorgu = "INSERT INTO kullanicilar VALUES(%s,%s,%s)" ```: Veritabanında çalıştırılacak SQL komutudur. Bu sorguya SELECT, INSERT, UPDATE, DELETE, ALTER gibi komutlarınızı yazabilir ve değişkenleri %s ile belirtebilirsiniz. <br>
+```cursor.execute(sorgu,(None,isim,yas)) ```: Yazılan sorguyu cursor aracılığı ile çalıştırıyoruz. parantez içindeki (None,isim,yas) bölümü sorgunun içinde yazdığımız %s e denk gelen değişkenlerdir. Ben tablomda bir auto increment sütunu tuttuğum için None ile boş değer gönderdim. <br>
+```mysql.connection.commit() ```: Yapılan değişikleri kaydetmek ve veritabında uygulamak için gerekli olan commit fonksiyonu. Eğer bu kısmı yazmazsanız değişiklikleriniz veritabanınızda uygulanmayacaktır. <br>
+```cursor.close() ```: Veritabanı bağlantısını sonlandırıyoruz. <br>
 
 ## İşlem Sonucu Gösteren Sayfa HTML Kodu (kullanicieklesonuc.html)
 
-Yukarıda  yazdığımız rpute sonucuna göre bizi bu sayfaya yönlendirecek ve formdan gelen verileri gösterecektir. Eğer bir hata meydana gelirse {{hata}} değişkeni ile ekrana yazacağız. Bu işlemler için aşağıdaki kodda yer alan alanımız yeterli olacaktır:
+Yukarıda  yazdığımız rpute sonucuna göre bizi bu sayfaya yönlendirecek ve formdan gelen verileri gösterecektir. Eğer bir hata meydana gelirse **{{hata}}** değişkeni ile ekrana yazacağız. Bu işlemler için aşağıdaki kodda yer alan alanımız yeterli olacaktır:
 
 ```
 <!DOCTYPE html>
@@ -171,7 +171,7 @@ else:
     print("Kayıt bulunamadı!")
 ```
 
-Bu komutta önemli olan kısımlardan birisi ```cursor.execute(sorgu,(id,))``` kısmında **idden** sonra **,** koymamızdır. Çünkü execute fonksiyonu sorgu komutundan sonra değişkenleri **tuple (demet)** değişkeniyle kabul eder. Tek elemanlı bir demetiniz varsa da değişkenden sonra virgül koymazsanız Python bunun bir demet olduğunu algılamaz. 
+Bu komutta önemli olan kısımlardan birisi ```cursor.execute(sorgu,(id,))``` kısmında **idden** sonra **","** koymamızdır. Çünkü execute fonksiyonu sorgu komutundan sonra değişkenleri **tuple (demet)** değişkeniyle kabul eder. Tek elemanlı bir demetiniz varsa da değişkenden sonra virgül koymazsanız Python bunun bir demet olduğunu algılamaz. 
 ```if kontrol > 0 ```kontrolü ise kontrol değişkenine atadığımız  ```cursor.execute(sorgu,(id,))```  işleminin dönüş değerini kontrol eder. Eğer kayıt yoksa 0 değeri döneceği için bu bölüm ile tabloda aradığınız sorguya aşt değer dönüp dönmediğini anlayabilirsiniz.
 
 
@@ -196,7 +196,7 @@ else:
 Farkettiğiniz üzere tek bir sonuç dönecek komutlarda **fetchone()** fonksiyonunu kullanırken birden fazla sonucun yani dizinin döneceği komutlarda **fetchall()** fonksiyonunu kullanıyoruz. İsterseniz bu dönen dizi direkt HTML sayfanıza ```return render_template("sonuc.html",veriler = datas)``` fonksiyonu ile göndererek değerleri orada da yazdırabilirsiniz. HTML sayfasına nasıl veri göndereceğnizi unuttuysanız [Flask HTML Sayfa Oluşturma ve HTML İçinde Python Kullanma](https://github.com/rumeysaustun/Flask/blob/main/4-%20Flask%20HTML%20Sayfa%20Olu%C5%9Fturma%20ve%20HTML%20%C4%B0%C3%A7inde%20Python%20Kullanma.md#flask-html-sayfa-olu%C5%9Fturma-ve-html-i%CC%87%C3%A7inde-python-kullanma), bölümünden bakabilirsiniz.
 
 ## UPDATE Kullanımı
-Daha önceden eklediğimiz herhangi bir değerde güncelleme yapmak istediğimizde UPDATE komutunu kullanırız. Değiştirilecek verileri ayarladığınız bir sayfada aşağıdaki örnekte yer aldığı gibi **UPDATE** komutunu kullanabilirsiniz:
+Daha önceden eklediğimiz herhangi bir değerde güncelleme yapmak istediğimizde **UPDATE** komutunu kullanırız. Değiştirilecek verileri ayarladığınız bir sayfada aşağıdaki örnekte yer aldığı gibi **UPDATE** komutunu kullanabilirsiniz:
 
 ```
 yeniIsim = "Yunus"
