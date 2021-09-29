@@ -55,7 +55,8 @@ kodunu giriyoruz. Şekil 1.12’deki gibi görüntüye sahip oluyor.
 
 Biz bir decoreter mantığı ile bir request yaptık. Ve bu request karşılık fonksiyon yardımı ile bir response değeri döndürdük. Burada önemli olan bir yer var. **@app.route("/")** ile request yaptıktan o requeste karşılık gelecek bir response değerini döndüren fonksiyonu yazmamız gerekiyor. Son kod olarak  
 ```
-def index(): return "Merhaba Dünya"
+def index(): 
+    return "Merhaba Dünya"
 ```
 kodunu giriyoruz. Ve Şekil 1.13’teki sayfa ortaya çıkıyor.
 
