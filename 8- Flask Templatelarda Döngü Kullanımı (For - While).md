@@ -27,7 +27,7 @@ def donguler():
    return render_template("donguler.html", listeler=listeler)
 ```
 
-Şimdi de **donguler.py** sayfamıza for blok yapısını ekleyerek kullanalım
+Şimdi de **donguler.html** sayfamıza for blok yapısını ekleyerek kullanalım
 
 ```
 <ul>
