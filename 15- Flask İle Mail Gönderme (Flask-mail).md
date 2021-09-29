@@ -2,6 +2,8 @@
 
 İlk olarak ```pip install Flask-Mail``` komutuyla kütüphaneyi yüklüyoruz. Kütüphaneyi yükledikten sonra ```from flask_mail import Mail, Message``` komutu ile projeye dahil ediyoruz.
 
+![pip ins](https://user-images.githubusercontent.com/59111328/135306598-e69fe972-1432-4797-a57a-c311ffb9acbd.PNG)
+
 ## Konfigürasyon Tanımlarını Ayarlama 
 Kütüphaneyi projeye dahil ettikten sonra mail sunucu ayarlarını tanımlayabilmek için gerekli konfigürasyon bilgilerini yazmaya sıra geldi. Kullandığınız mail sunucuya ait bağlantı bilgilerini kullanarak aşağıdaki kodları kendi projenizde düzenleyebilirsiniz. Bu bilgileri nereden bulacağı bilmeyenler için aşağıdaki örneği **Gmail** üzerinden göstereceğim. Böylece **Gmail** bilgilerinizi girerek hemen kullanmaya başlayabilirsiniz. Fakat Gmail yerine mail kutusu kullananlar, mail sunucularının **STMP** ayarlarını girerek kullanabilirler.
 
