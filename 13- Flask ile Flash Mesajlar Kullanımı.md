@@ -7,7 +7,7 @@ Proje dosyamızda istediğiniz bir sayfa veya durum için **flash()  fonksiyonu*
 
 Komutu biraz daha açacak olursak; <br>
 **mesaj:** Kullanıcıya gösterilecek olan uyarı mesajıdır.<br>
-**kategori:**Uyarı mesajının türüdür ve opsiyoneldir. Hata mesajı ise error,bilgi mesajı ise **info,uyarı mesajı** ise **warning** terimini kullanabilirsiniz
+**kategori:** Uyarı mesajının türüdür ve opsiyoneldir. Hata mesajı ise error,bilgi mesajı ise **info,uyarı mesajı** ise **warning** terimini kullanabilirsiniz
 
 Flash mesajınızı istediğiniz yerde oluşturabilirsiniz. Oluşturduğunuz mesajları HTML sayfasında göstermek için ise aşağıdaki kod blogunu kullanmanız gerekiyor.
 
