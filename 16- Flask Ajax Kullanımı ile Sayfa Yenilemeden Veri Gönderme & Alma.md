@@ -63,7 +63,7 @@ def hesapla():
 
 
 if __name__ == "__main__":
-    app.run(debug=True
+    app.run(debug=True)
 ```
 
 ## Ajax Sayfasının Oluşturulması ve Ajax İşlemleri
@@ -145,8 +145,8 @@ Proje sayfamızın son hali şu şekilde olacaktır:,
 
 input ile aldığımız sayıyı Ajax ile gönderip **/hesapla** route bölümünden dönen veriyi **succes**  ile ilgili HTML **sonuc** idsine yazdırdığımız örneğimiz sonucu ekran görüntüsü şu şekilde olacaktır. 
 
+![ajax](https://user-images.githubusercontent.com/59111328/135306072-588e9173-c752-49c2-94a7-f2a70a8779bf.PNG)
 
-**RESİM EKLENECEK**
 
 Örnekte görüldüğü gibi her butona tıkladığınız zaman çalışacak Ajax fonksiyonu ile inputtaki değeri alarak /hesapla sayfasına gönderdik ve karesini hesapladıktan sonra return ile döndürüp HTML sayfamızda Ajaxın succes özelliği ile ekrana bastırdık. Siz örneği form yapılarınızda kullanabilir ve daha fazla kontrol parametresi ekleyerek zenginleştirebilirsiniz.
 
