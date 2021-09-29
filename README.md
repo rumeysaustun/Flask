@@ -8,7 +8,7 @@ pip install flask
 ```
 ![pip install flask](https://user-images.githubusercontent.com/59111328/135081212-8ce58489-57d0-4448-9eb3-fed4a7fc2e3b.PNG)
 <br>
---------------------------------------------------------------------------**Şekil 1.1**--------------------------------------------------------------------------
+**Şekil 1.1**
 
 Komutu girdiğinizde Şekil 1.1'deki ekran karşınıza çıkacaktır. Başarılı bir şekilde indirildi.
 
@@ -90,7 +90,7 @@ Bir resquet oluşturduk, şimdi sıra bu resqueste karşılık bir response olu�
 ```  
 kodunu giriyoruz. Şekil 1.12’deki gibi görüntüye sahip oluyor. 
 ![kod6](https://user-images.githubusercontent.com/59111328/135092468-b2ffd4e8-8264-4661-905c-c6745d0e77e8.PNG)
-<br>----------------------------------------------------------------**Şekil 1.12**-----------------------------------------------------------------
+<br>----------------------------------------------------------------**Şekil 1.12**----------------------------------------------------------------
 
 Biz bir decoreter mantığı ile bir request yaptık. Ve bu request karşılık fonksiyon yardımı ile bir response değeri döndürdük. Burada önemli olan bir yer var. **@app.route("/")** ile request yaptıktan o requeste karşılık gelecek bir response değerini döndüren fonksiyonu yazmamız gerekiyor. Son kod olarak  
 ```
