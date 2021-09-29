@@ -1,4 +1,4 @@
-# 4- Flask HTML Sayfa Oluşturma ve HTML İçinde Python Kullanma 
+# Flask HTML Sayfa Oluşturma ve HTML İçinde Python Kullanma 
 
 Önceki adımlarda sayfa yönlendirmelerimizi (route) hazırlayarak sayfa bağlantılarımızı oluşturmuştuk ve sayfalara mesajlar girmiştik. Şimdi ise sayfalarımıza HTML temalarımızı ve içeriklerimizi nasıl gireceğimizi öğreneceğiz.
 
