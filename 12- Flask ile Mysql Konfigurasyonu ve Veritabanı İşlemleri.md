@@ -37,6 +37,8 @@ Buradaki ```mysql = MySQL(app)``` komutu ile app içine tanımladığımız conf
 
 Bu örneğimizde kullanacağımız basit bir veritabanı tablosunu direkt PHPMyAdmin üzerinden oluşturabilirsiniz. Bu yazıdaki örnekte kullanacağım tablo yapısı şu şekildedir.
 
+![image](https://user-images.githubusercontent.com/59111328/135296682-eb1df46e-a0bf-4e09-aac5-d445422beefa.png)
+
  
 ## Örnek Form İçin Route Ekleme
 
