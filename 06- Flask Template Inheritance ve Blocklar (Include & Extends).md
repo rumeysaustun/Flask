@@ -2,7 +2,7 @@
 
 İlk olarak templates klasörün içine şablon bir sayfa oluşturuyoruz ve adına **hizmetler** adını veriyoruz.
 
-![hizmetler](https://user-images.githubusercontent.com/59111328/135275373-ec2ac28c-db1c-4914-a65d-bafba2ff8103.PNG)
+![1](https://user-images.githubusercontent.com/59111328/136694180-9da44c7d-3abf-4b9e-a326-ccc760193762.PNG)
 
 Örnek bir şablon olacağı ve her sayfada sadece hizmet başlığı ile metini değiştiğinden dolayı basit bir HTML kodlama yapmak için aşağıdakileri yazıyoruz:
 ```
@@ -29,7 +29,7 @@
 
 Yukarıdaki yazılan kodları sekmeye yazdıktan sonra aşağıdaki görüntüyü elde ediyoruz.
 
-![a1](https://user-images.githubusercontent.com/59111328/135275676-02456d82-04c0-434b-8a34-cb7ebf4efc76.PNG)
+![2](https://user-images.githubusercontent.com/59111328/136694187-1f01ee0c-fccf-4a9b-aadf-665ad499cc3e.PNG)
 
 Dosyamıza hizmetler isimli sayfayı oluşturmak için gerekli route’u ekleyelim
 
@@ -45,7 +45,8 @@ Tarayıcıda çalıştırdığımız zaman sayfanın nasıl göründüğüne bak
 
 Bu şablonu kalıtım (inheritance) kullanarak diğer sayfalarda kullanabiliriz. Bunun için ilk yapmamız gereken şey yeni bir hizmet sayfası oluşturalım ve adını **bahçe işleri** koyalım. Ardından gerekli route işlemini gerçekleştirelim.
 
-![bahçe](https://user-images.githubusercontent.com/59111328/135276196-9f867393-769a-4254-adfd-d2792bacaec6.PNG)
+![3](https://user-images.githubusercontent.com/59111328/136694198-cebde9c0-28d6-4ed6-893c-1e525ef1e7b7.PNG)
+
 
 ```
 @app.route('/bahce-isleri')
