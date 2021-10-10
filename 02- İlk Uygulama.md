@@ -1,18 +1,20 @@
 # Flask ile İlk Uygulama
 
-Birçok program kullanabilirsiniz ben aşamaları gösterirken Pycharm 2021.2.2 kullanacağım. İlk olarak aşağıdaki kodu yazarak Framework’u projeye dahil ediyoruz.
+Birçok program kullanabilir, ben aşamaları gösterirken **Miniconda3** kullanacağım. İlk olarak aşağıdaki kodu yazarak Framework’u projeye dahil ediyoruz.
 
 ```
  from flask import Flask 
 ```
-![kod1](https://user-images.githubusercontent.com/59111328/135089596-38019db6-738c-4167-a28c-690a1e32d5f6.PNG)<br>
+
+![1](https://user-images.githubusercontent.com/59111328/136690294-bffd9f67-5c17-41d9-b789-0a20cf10a6c8.PNG)
+<br>
 **Şekil 1.6**
 
 Ardından aşağıdaki kod ile uygulamayı oluşturuyoruz.
 ```
 app = Flask(__name__)
 ```
-![kod2](https://user-images.githubusercontent.com/59111328/135090894-f54b4893-f681-44df-a682-a79ca5e4e527.PNG)
+![2](https://user-images.githubusercontent.com/59111328/136690316-0d2e017f-7c27-4ade-a4e3-f0e34f1e2195.PNG)
 <br>
 **Şekil 1.7**
 
@@ -20,7 +22,7 @@ Aşağıdaki kod ile satırımızı kontrol ediyoruz.
 ```
 if __name__ =="__main__":
 ```
-![kod3](https://user-images.githubusercontent.com/59111328/135091231-79a406ab-97b5-430c-8109-45256ead0564.PNG)
+![3](https://user-images.githubusercontent.com/59111328/136690344-fde86d2a-0af2-4f42-bcf1-06d1c5071ec9.PNG)
 <br>
 **Şekil 1.8**
 
@@ -30,7 +32,7 @@ app.run(debug=True)
 ```
 yazıyoruz ardından uygulamayı çalıştırıyoruz. Ve uygulamanın son hali Şekil 1.9’da gösterildiği gibi oluyor.
 
-![kod4](https://user-images.githubusercontent.com/59111328/135091538-c9fc80eb-7ffc-4424-af6a-40b0c41c17ff.PNG)
+![4](https://user-images.githubusercontent.com/59111328/136690411-7d92bf26-8493-40b6-b1de-ff405425607d.PNG)
 <br>
 **Şekil 1.9**
 
