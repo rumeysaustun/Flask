@@ -51,7 +51,7 @@ Bir resquet oluşturduk, şimdi sıra bu resqueste karşılık bir response olu�
 ```
 @app.route("/")
 ```  
-kodunu giriyoruz. Şekil 1.12’deki gibi görüntüye sahip oluyor. 
+kodunu giriyoruz. Şekil 1.12’deki gibi görüntüye sahip oluyor. <br>
 ![4](https://user-images.githubusercontent.com/59111328/136690924-7de7623f-8845-4462-bd78-de33e34835f4.PNG)
 <br>**Şekil 1.12**
 
@@ -62,7 +62,7 @@ def index():
 ```
 kodunu giriyoruz. Ve Şekil 1.13’teki sayfa ortaya çıkıyor.
 
-![kod7](https://user-images.githubusercontent.com/59111328/135092810-abe4d0dd-ad95-4ea0-b516-05c10756f9ae.PNG)
+![5](https://user-images.githubusercontent.com/59111328/136690957-0600bf93-3b83-44c8-a084-96b6863485c2.PNG)
 <br>**Şekil 1.13**
 
 Tüm kodlarımızı doğru bir şekilde girdikten sonra uygulamayı çalıştırıyoruz ve Şekil 1.14’deki sekme açılıyor, görüldüğü üzere başarıyla çalışıyor.
@@ -72,11 +72,11 @@ Tüm kodlarımızı doğru bir şekilde girdikten sonra uygulamayı çalıştır
 
 Uygulama **localhost 5000** adresinde çalışıyor. İsteğe bağlı olarak değiştirebilirsiniz. Değiştirmek için 
 ```
-app.run(debug=True)
+app.run()
 ```
 kısmını
 ```
-app.run(debug=True,port=2000)
+app.run(port=2000)
 ```
 olarak değiştirmeniz yeterli olacaktır. Uygulamanın son hali Şekil 1.15’te göründüğü gibi olacaktır.
 
