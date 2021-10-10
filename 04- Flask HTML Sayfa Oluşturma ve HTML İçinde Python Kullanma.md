@@ -58,7 +58,7 @@ from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
-@app.route('/')
+@app.route('/hakkimizda')
 def index():
     id = 3
     return render_template("hakkimizda.html", sayfabasligi="Hakkımızda Sayfası", sayfaid = id)
@@ -67,7 +67,7 @@ if __name__ == '__main__':
    app.run()
 
 ```
-![son hali](https://user-images.githubusercontent.com/59111328/136693397-6e0dc095-b005-42dc-8bea-8596536210f7.PNG)
+![son](https://user-images.githubusercontent.com/59111328/136693997-17389248-b887-48a2-8256-a22869ae18aa.PNG)
 
 Linke tıkladığımız zaman karşımıza çıkan sayfa şöyledir:
 
