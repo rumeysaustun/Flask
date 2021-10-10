@@ -1,10 +1,20 @@
 # Flask Sayfaya Kaynak Dosyaları Ekleme (CSS,JS,IMG vs).md
 
-Örnek olarak yine örnek bir hakkimizda.html dosyası oluşturarak dosyalarımızı bu HTML kodların arasına dahil ediyoruz.Şimdi Flask'ın kullanacağımız js, css, resim vs. dosyaları dahil etmemiz için gerekli olan static klasörünü oluşturuyoruz. Bundan sonra kodlarımıza dahil edeceğimiz bütün sabit dosyalar static klasörünün içinde olacaktır. Bu klasörün içeriğini daha düzenli olması adına css, js ve img gibi alt klasörlere ayırabiliriz. Örnek olarak bir dizin şu şekilde olabilir:
+Örnek olarak yine örnek bir hakkimizda.html dosyası oluşturarak dosyalarımızı bu HTML kodların arasına dahil ediyoruz.Şimdi Flask'ın kullanacağımız js, css, resim vs. dosyaları dahil etmemiz için gerekli olan static klasörünü oluşturuyoruz.
 
-![bir](https://user-images.githubusercontent.com/59111328/135273440-1e0cacfa-0c0d-4352-89db-e881210d5350.png)
+![11](https://user-images.githubusercontent.com/59111328/136693811-0cee7ee2-a90a-4a93-928e-425911609418.png)
 
-Artık bu klasörlerin içini kullanacağımız dosyalarla doldurabiliriz. Ardından nasıl kodlarımıza dahil edeceğimizi görelim. Bunun için örnek oluşturduğumuz HTML dosyasının içine girelim ve dahil etmek istediğimiz alanda aşağıdaki kod yapısını kullanalım. Örnek olarak ben bir resim dahil etmek istiyorum:
+
+Bundan sonra kodlarımıza dahil edeceğimiz bütün sabit dosyalar static klasörünün içinde olacaktır. Bu klasörün içeriğini daha düzenli olması adına css, js ve img gibi alt klasörlere ayırabiliriz. Örnek olarak bir dizin şu şekilde olabilir:
+
+![222](https://user-images.githubusercontent.com/59111328/136693826-8c898a50-053e-4b9b-95ec-d92b1fee8cad.png)
+
+Artık bu klasörlerin içini kullanacağımız dosyalarla doldurabiliriz. Örnek olarak img klasörünün içine **manzara.jpg** adlı bir resim ekleyelim.
+
+![33](https://user-images.githubusercontent.com/59111328/136693857-01d6f243-159b-4644-a433-44970dff7520.png)
+
+
+Ardından nasıl kodlarımıza dahil edeceğimizi görelim. Bunun için örnek oluşturduğumuz HTML dosyasının içine girelim ve dahil etmek istediğimiz alanda aşağıdaki kod yapısını kullanalım. Örnek olarak ben bir resim dahil etmek istiyorum:
 
 ```
 {{ url_for('static', filename='img/manzara.jpg') }}
