@@ -1,4 +1,4 @@
-# Flask Kurulumu
+# Kurulumlar
 
 Bu kurulum Windows 10 Python 3.9.7'de yapılmıştır. İlk olarak komut istemine aşağıdaki kod bloğu yazılarak Flask bilgisayara  kurulur.
 
