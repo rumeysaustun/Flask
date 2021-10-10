@@ -2,31 +2,35 @@
 
 Önceki adımlarda sayfa yönlendirmelerimizi (route) hazırlayarak sayfa bağlantılarımızı oluşturmuştuk ve sayfalara mesajlar girmiştik. Şimdi ise sayfalarımıza HTML temalarımızı ve içeriklerimizi nasıl gireceğimizi öğreneceğiz.
 
-İlk olarak çalışma dosyanızın olduğu dizinde templates isimli klasör oluşturalım. Ardından HTML sayfalarınızı bu klasöre koyalım. Örneğin **iletisim.html**, **hakkimizda.html** gibi sayfalarınızı bu klasöre koyalım.
+İlk olarak sol tarafta bulunan dosyaların içinden çalışma dosyamızı bulalım ve resimde gösterildiği şekilde adını değiştirelim. Ben **FlaskProjesi** olarak değiştirdim.
 
-![birleşmiş](https://user-images.githubusercontent.com/59111328/135268882-371533b6-c1f3-411c-9f14-8a72786e30f4.png)
+![1](https://user-images.githubusercontent.com/59111328/136693025-6d8d5b30-4f5d-4f1c-923b-097bad41e61e.png)
 
-Bu klasör içinde alt klasörler oluşturarak HTML dosyalarınızı bölümlere ayırabiliriz (musteripaneli, yonetim, alanlar vs). Ama unutmayın ki ana klasörün adı **templates** olmak zorunda. Buna dikkat ettikten sonra sıradaki adıma geçebiliriz.
+Daha sonra işaretlenen kısıma basıp yeni klasör oluşturuyoruz ve adını koyuyoruz. 
 
-Artık sayfalarımız hazır olduğuna göre (HTML temalarınızı hazırladığınızı varsayıyorum) yönlendirmelerimizi sadece bir mesajla değilde ilgili HTML dosyasını göstererek yapabiliriz. Bunun için route kodunuz şu şekilde olmalıdır:
+![3](https://user-images.githubusercontent.com/59111328/136693056-5238685a-4463-49f8-a929-9bcd04884859.png)
 
-```
-@app.route('/hakkimizda')
-def hakkimizda():
-   return render_template("hakkimizda.html")
-```
+Çalışma dosyamızı yeni oluşturduğumuz bu klasörün içine atıyoruz ve klasöre çift tıklıyoruz.
 
-Karşımıza **hakkimizda.html** sayfası geliyor. Örnekte göreceğiniz üzere **render_template** fonksiyonu ile route'a ilgili sayfaya gidildiğinde hangi dosyanın yükleneceğini gösterebiliyoruz.
+![4](https://user-images.githubusercontent.com/59111328/136693136-c6ee7634-e742-4e0b-b27f-6e45d7fafdab.png)
 
-```
-@app.route('/hakkimizda')
-def hakkimizda():
-     id = 3
-     return render_template("hakkimizda.html", sayfabasligi="Hakkımızda Sayfası", sayfaid = id) 
+Tekrardan yeni bir klasör oluşturuyoruz. Adını **templates** koyuyoruz. Klasörün adı **templates** olmak zorunda.
 
-```
+![5](https://user-images.githubusercontent.com/59111328/136693173-9abc6b87-0269-456e-ab27-cf2b09f8ba0d.png)
 
-Yukarıda gördüğünüz gibi iki şekilde de değişkenlerimizi HTML sayfalarınıza taşıyabiliriz. Peki bu taşıdığımız değişkenleri nasıl göstereceğiz? Bunun için hemen alttaki HTML sayfasını inceleyelim.
+**templates** klasörünün içine girip sağ tık yapıyoruz ve **new file** diyoruz.
+
+![6](https://user-images.githubusercontent.com/59111328/136693198-ebbbd273-ec96-4f27-9357-9ae9f760c05f.png)
+
+Oluşturduğumuz yeni dosyanın adını **hakkimizda.html** yapıyoruz.
+
+![7](https://user-images.githubusercontent.com/59111328/136693233-1c293167-1cb4-43e5-92dd-07e951b39968.png)
+
+Yeni oluşturduğumuz bu klasöre sağ tık yapıp **open with** seçeneğinden **editor**'e basıyoruz.
+
+![8](https://user-images.githubusercontent.com/59111328/136693272-2c1dc10e-059b-4fca-beb0-9a7cb24e4967.png)
+
+Açılan HTML dosyamıza 
 
 ```
 <!DOCTYPE html>
@@ -43,7 +47,29 @@ Yukarıda gördüğünüz gibi iki şekilde de değişkenlerimizi HTML sayfalar�
 </html>
 
 ```
-Bu kodları **hakkimizda.html** dosysına yazdığımız zaman karşımıza çıkan sayfa şöyledir.
+kodlarını yazıyoruz.
+
+![html](https://user-images.githubusercontent.com/59111328/136693316-98db9636-9d2e-4699-9015-7f488487e267.PNG)
+
+Çalışma sayfamıza geri dönüp HTML sayfasına yönlendirmeyi yazıyoruz. **render_template** fonksiyonu ile route'a ilgili sayfaya gidildiğinde hangi dosyanın yükleneceğini gösterebiliyoruz. Aşağıdaki kodları çalışma dosyamıza yazıp çalıştırıyoruz.
+
+```
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    id = 3
+    return render_template("hakkimizda.html", sayfabasligi="Hakkımızda Sayfası", sayfaid = id)
+
+if __name__ == '__main__':
+   app.run()
+
+```
+![son hali](https://user-images.githubusercontent.com/59111328/136693397-6e0dc095-b005-42dc-8bea-8596536210f7.PNG)
+
+Linke tıkladığımız zaman karşımıza çıkan sayfa şöyledir:
 
 ![html sayfası](https://user-images.githubusercontent.com/59111328/135271620-161269c0-86fa-46aa-86fd-a5c33854ee3f.PNG)
 
