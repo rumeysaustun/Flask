@@ -19,7 +19,7 @@ kodlarını yazarak aşağıdaki görüntüyü elde ediyoruz.
 
 Birkaç ana sayfa daha ekleyerek web sitemizi düzenleyelim. İstediğimiz gibi ana sayfa ekleyebilir, seçenekleri çoğaltabiliriz.
 
-![kod8](https://user-images.githubusercontent.com/59111328/135260364-86bed64b-d8f8-4aad-9b9a-ff1a3f8aef51.PNG)
+![6](https://user-images.githubusercontent.com/59111328/136691036-fad47606-63a9-4fcb-aeed-5ed52caf934e.PNG)
 
 Kod satırları aşağıdaki gibidir.
 
