@@ -47,6 +47,19 @@ Sayfaya örnek olarak dahil ettiğim resim ve tüm kod yapısını örnek olarak
 </body>
 </html>
 ```
+Çalışma dosyamızın kodları ise şu şekildedir:
+```
+from flask import Flask, render_template, request
+
+app = Flask(__name__)
+
+@app.route('/')
+def index():
+    return render_template("hakkimizda.html")
+
+if __name__ == '__main__':
+   app.run()
+```
 
 Ekran çıktısı şu şekilde olacaktır:
 
