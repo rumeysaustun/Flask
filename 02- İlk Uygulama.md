@@ -26,19 +26,19 @@ if __name__ =="__main__":
 <br>
 **Şekil 1.8**
 
-Son olarak web sitesinde alınan syntax vb. hataları almamak için 
+Son olarak 
 ```
-app.run(debug=True)
+app.run()
 ```
 yazıyoruz ardından uygulamayı çalıştırıyoruz. Ve uygulamanın son hali Şekil 1.9’da gösterildiği gibi oluyor.
 
-![4](https://user-images.githubusercontent.com/59111328/136690411-7d92bf26-8493-40b6-b1de-ff405425607d.PNG)
+![3](https://user-images.githubusercontent.com/59111328/136690860-60ce145f-b87a-46f4-9aa9-679f2e164f72.PNG)
 <br>
 **Şekil 1.9**
 
 Projeyi çalıştırdıktan sonra Şekil 1.10’daki gibi alt kısımda bulunan linke tıklayarak uygulamaya gidiyoruz.
 
-![kod5](https://user-images.githubusercontent.com/59111328/135091712-8c13dfb0-dd7e-4d4c-9e87-8bf56078cba0.PNG)
+![3](https://user-images.githubusercontent.com/59111328/136690880-c8cde8db-a35e-4eef-bfa4-d4d341d15220.PNG)
 <br>
 **Şekil 1.10**
 
@@ -52,7 +52,7 @@ Bir resquet oluşturduk, şimdi sıra bu resqueste karşılık bir response olu�
 @app.route("/")
 ```  
 kodunu giriyoruz. Şekil 1.12’deki gibi görüntüye sahip oluyor. 
-![kod6](https://user-images.githubusercontent.com/59111328/135092468-b2ffd4e8-8264-4661-905c-c6745d0e77e8.PNG)
+![4](https://user-images.githubusercontent.com/59111328/136690924-7de7623f-8845-4462-bd78-de33e34835f4.PNG)
 <br>**Şekil 1.12**
 
 Biz bir decoreter mantığı ile bir request yaptık. Ve bu request karşılık fonksiyon yardımı ile bir response değeri döndürdük. Burada önemli olan bir yer var. **@app.route("/")** ile request yaptıktan o requeste karşılık gelecek bir response değerini döndüren fonksiyonu yazmamız gerekiyor. Son kod olarak  
