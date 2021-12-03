@@ -2,9 +2,9 @@
 ## Aşağıdaki konulara ulaşabilirsiniz
 
 1- [Kurulum](https://github.com/rumeysaustun/Flask/blob/main/01-%20Kurulum.md#kurulumlar) <br>
-2- [İlk Uygulama](https://github.com/rumeysaustun/Flask/blob/main/2-%20%C4%B0lk%20Uygulama.md#flask-ile-i%CC%87lk-uygulama) <br>
-3- [Flask’ta Static - Dinamik Url Yapısı](https://github.com/rumeysaustun/Flask/blob/main/3-%20Flask%E2%80%99ta%20Static%20-%20Dinamik%20Url%20Yap%C4%B1s%C4%B1.md#flaskta-staticdinamik-url-yap%C4%B1s%C4%B1) <br>
-4- [Flask HTML Sayfa Oluşturma ve HTML İçinde Python Kullanma](https://github.com/rumeysaustun/Flask/blob/main/4-%20Flask%20HTML%20Sayfa%20Olu%C5%9Fturma%20ve%20HTML%20%C4%B0%C3%A7inde%20Python%20Kullanma.md#flask-html-sayfa-olu%C5%9Fturma-ve-html-i%CC%87%C3%A7inde-python-kullanma)<br>
+2- [İlk Uygulama](https://github.com/rumeysaustun/Flask/blob/main/02-%20%C4%B0lk%20Uygulama.md#flask-ile-i%CC%87lk-uygulama) <br>
+3- [Flask’ta Static - Dinamik Url Yapısı](https://github.com/rumeysaustun/Flask/blob/main/03-%20Flask%E2%80%99ta%20Static%20-%20Dinamik%20Url%20Yap%C4%B1s%C4%B1.md#flaskta-staticdinamik-url-yap%C4%B1s%C4%B1) <br>
+4- [Flask HTML Sayfa Oluşturma ve HTML İçinde Python Kullanma](https://github.com/rumeysaustun/Flask/blob/main/04-%20Flask%20HTML%20Sayfa%20Olu%C5%9Fturma%20ve%20HTML%20%C4%B0%C3%A7inde%20Python%20Kullanma.md#flask-html-sayfa-olu%C5%9Fturma-ve-html-i%CC%87%C3%A7inde-python-kullanma)<br>
 5- [Flask Sayfaya Kaynak Dosyaları Ekleme (CSS,JS,IMG vs)](https://github.com/rumeysaustun/Flask/blob/main/5-%20Flask%20Sayfaya%20Kaynak%20Dosyalar%C4%B1%20Ekleme%20(CSS%2CJS%2CIMG%20vs).md#flask-sayfaya-kaynak-dosyalar%C4%B1-ekleme-cssjsimg-vsmd) <br>
 6- [Flask Template Inheritance ve Blocklar (Include & Extends)](https://github.com/rumeysaustun/Flask/blob/main/6-%20Flask%20Template%20Inheritance%20ve%20Blocklar%20(Include%20%26%20Extends).md#flask-template-inheritance-ve-blocklar-include--extends) <br>
 7- [Flask Templatelarda Koşul Kullanımı (If - Else)](https://github.com/rumeysaustun/Flask/blob/main/7-%20Flask%20Templatelarda%20Ko%C5%9Ful%20Kullan%C4%B1m%C4%B1%20(If%20-%20Else).md#flask-templatelarda-ko%C5%9Ful-kullan%C4%B1m%C4%B1-if---else) <br>
