@@ -1,7 +1,7 @@
 # Flask
 ## Aşağıdaki konulara ulaşabilirsiniz
 
-1- [Kurulum](https://github.com/rumeysaustun/Flask/blob/main/1-%20Kurulum.md#flask-kurulumu) <br>
+1- [Kurulum](https://github.com/rumeysaustun/Flask/blob/main/01-%20Kurulum.md#kurulumlar) <br>
 2- [İlk Uygulama](https://github.com/rumeysaustun/Flask/blob/main/2-%20%C4%B0lk%20Uygulama.md#flask-ile-i%CC%87lk-uygulama) <br>
 3- [Flask’ta Static - Dinamik Url Yapısı](https://github.com/rumeysaustun/Flask/blob/main/3-%20Flask%E2%80%99ta%20Static%20-%20Dinamik%20Url%20Yap%C4%B1s%C4%B1.md#flaskta-staticdinamik-url-yap%C4%B1s%C4%B1) <br>
 4- [Flask HTML Sayfa Oluşturma ve HTML İçinde Python Kullanma](https://github.com/rumeysaustun/Flask/blob/main/4-%20Flask%20HTML%20Sayfa%20Olu%C5%9Fturma%20ve%20HTML%20%C4%B0%C3%A7inde%20Python%20Kullanma.md#flask-html-sayfa-olu%C5%9Fturma-ve-html-i%CC%87%C3%A7inde-python-kullanma)<br>
