@@ -1,4 +1,7 @@
 # Flask
+
+Python Flask Framework kullanımını tamamen ele almaktadır.
+
 ## Aşağıdaki konulara ulaşabilirsiniz
 
 1- [Kurulum](https://github.com/rumeysaustun/Flask/blob/main/01-%20Kurulum.md#kurulumlar) <br>
